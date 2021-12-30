@@ -82,16 +82,23 @@
 
 # CASE STATEMENT
 
-read -p "Are you 21 or over? Y/N " ANSWER
-case "$ANSWER" in
-    [yY] | [yY][eE][sS]) # ) to end the condition
-    echo "You can have a beer :)"
-    ;; # ;; to end this case
-    [nN] | [nN][oO])
-    echo "Sorry!"
-    ;;
-    *) # default, none of above happen
-    echo "PLease enter y/yes or n/no"
-    ;;
-esac
+# read -p "Are you 21 or over? Y/N " ANSWER
+# case "$ANSWER" in
+#     [yY] | [yY][eE][sS]) # ) to end the condition
+#     echo "You can have a beer :)"
+#     ;; # ;; to end this case
+#     [nN] | [nN][oO])
+#     echo "Sorry!"
+#     ;;
+#     *) # default, none of above happen
+#     echo "PLease enter y/yes or n/no"
+#     ;;
+# esac
 
+# SIMPLE FOR LOOP
+
+NAMES="Lawrence Emily Peter David"
+for NAME in $NAMES
+    do
+        echo "Hello $NAME"
+done
