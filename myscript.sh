@@ -116,9 +116,17 @@
 
 # WHILE LOOP
 
-LINE=1
-while read -r CURRENT_LINE
-    do
-        echo "$LINE: $CURRENT_LINE"
-        ((LINE++))
-done < "./new-1.txt"
+# LINE=1
+# while read -r CURRENT_LINE
+#     do
+#         echo "$LINE: $CURRENT_LINE"
+#         ((LINE++))
+# done < "./new-1.txt"
+
+# FUNCTION
+
+function myFunc(){
+    echo "Hello World!"
+}
+
+myFunc
