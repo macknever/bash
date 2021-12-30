@@ -97,8 +97,19 @@
 
 # SIMPLE FOR LOOP
 
-NAMES="Lawrence Emily Peter David"
-for NAME in $NAMES
+# NAMES="Lawrence Emily Peter David"
+# for NAME in $NAMES
+#     do
+#         echo "Hello $NAME"
+# done
+
+# FOR LOOP TO RENAME FILES
+
+FILES=$(ls *.txt)
+NEW="new"
+
+for FILE in $FILES
     do
-        echo "Hello $NAME"
+        echo "renaming $FILE to new-$FILE"
+        mv $FILE $NEW-$FILE
 done
