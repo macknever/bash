@@ -6,13 +6,13 @@
 # VARIABLES
 # Uppercase by convention
 
-NAME="Emily"
+# NAME="Emily"
 
 
 # USER INPUT
 
-read -p "Enter your name: " NAME
-echo Hello $NAME
+# read -p "Enter your name: " NAME
+# echo Hello $NAME
 
 # SIMPLE IF STATEMENT
 
@@ -25,12 +25,25 @@ echo Hello $NAME
 
 # IF-ELSE
 
-if [ "$NAME" == "Lawrence" ]
+# if [ "$NAME" == "Lawrence" ]
+# then
+#     echo "a"
+# elif [ "$NAME" == "Emily" ]
+# then
+#     echo "b"
+# else 
+#     echo "NOT a"
+# fi
+
+
+# COMPARISON
+
+NUM1=31
+NUM2=5
+
+if [ "$NUM1" -gt "$NUM2" ]
 then
-    echo "a"
-elif [ "$NAME" == "Emily" ]
-then
-    echo "b"
-else 
-    echo "NOT a"
+    echo "$NUM1 is greater than $NUM2"
+else
+    echo "$NUM1 is less than $NUM2"
 fi
