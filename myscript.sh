@@ -11,14 +11,14 @@ NAME="Emily"
 
 # USER INPUT
 
-# read -p "Enter your name: " NAME
-# echo Hello $NAME
+read -p "Enter your name: " NAME
+echo Hello $NAME
 
 # SIMPLE IF STATEMENT
 
 # if [ $NAME==Lawrence ]
 # then
-#     echo Lawrence
+#      echo Lawrence
 # fi
 
 
