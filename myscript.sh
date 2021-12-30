@@ -125,8 +125,16 @@
 
 # FUNCTION
 
-function myFunc(){
-    echo "Hello World!"
+# function myFunc(){
+#     echo "Hello World!"
+# }
+
+# myFunc
+
+# FUCNTION PARAMETERS
+
+function myFunc() {
+    echo "Hello, I am $1 and I am $2"
 }
 
-myFunc
+myFunc "Lawrence" "36"
