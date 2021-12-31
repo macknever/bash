@@ -133,8 +133,14 @@
 
 # FUCNTION PARAMETERS
 
-function myFunc() {
-    echo "Hello, I am $1 and I am $2"
-}
+# function myFunc() {
+#     echo "Hello, I am $1 and I am $2"
+# }
 
-myFunc "Lawrence" "36"
+# myFunc "Lawrence" "36"
+
+# WRITE INTO A FILE
+mkdir hello
+touch "hello/world.txt"
+echo "Hello World!" >> "hello/world.txt"
+echo "Created hello/world.txt"
