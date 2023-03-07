@@ -14,3 +14,8 @@ for i in $(<data_file)
 do
 	echo i is $i
 done
+
+for f in $(find -H /etc 2>/dev/null | grep aliases)
+do
+	echo grub named things are $f
+done
